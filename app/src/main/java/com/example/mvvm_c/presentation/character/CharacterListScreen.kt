@@ -1,5 +1,6 @@
 package com.example.mvvm_c.presentation.character
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -50,17 +51,18 @@ fun CharacterItem(
     onClick: () -> Unit
 ) {
     Card(
-        onClick = onClick,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 4.dp)
+            .padding(vertical = 8.dp)
+            .clickable { onClick() }
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
                 text = character.name,
                 style = MaterialTheme.typography.titleMedium
             )
-            Text(text = "${character.species} - ${character.status}")
+            Text(text = "Especie: ${character.species}")
+            Text(text = "Estado: ${character.status}")
         }
     }
 }
