@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">mvvm_c</string>
+
+    <!-- Pantalla de registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="registro_subtitulo">Llena los datos para registrarte</string>
+    <string name="registro_icono">Icono de registro de usuario</string>
+    <string name="registro_nombre">Nombre</string>
+    <string name="registro_correo">Correo electronico</string>
+    <string name="registro_contrasena">Contraseña</string>
+    <string name="registro_boton">Registrarse</string>
+    <string name="registro_exito">Registro correcto</string>
+
+    <!-- Datos del alumno -->
+    <string name="registro_datos_alumno">Datos del alumno</string>
+    <string name="registro_nombre_alumno">Nombre: Carlos de Jesús Martinez</string>
+    <string name="registro_matricula">Matrícula: 253432</string>
 </resources>
