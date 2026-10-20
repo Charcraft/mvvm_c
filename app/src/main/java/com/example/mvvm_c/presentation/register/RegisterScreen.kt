@@ -64,6 +64,12 @@ fun RegisterScreen(
             value = viewModel.nombre,
             onValueChange = viewModel::onNombreChange,
             label = { Text(text = stringResource(id = R.string.registro_nombre)) },
+            leadingIcon = {
+                Icon(
+                    painter = painterResource(id = R.drawable.ic_person_add),
+                    contentDescription = null
+                )
+            },
             isError = viewModel.errorNombre.isNotEmpty(),
             supportingText = {
                 if (viewModel.errorNombre.isNotEmpty()) {
@@ -81,6 +87,12 @@ fun RegisterScreen(
             value = viewModel.correo,
             onValueChange = viewModel::onCorreoChange,
             label = { Text(text = stringResource(id = R.string.registro_correo)) },
+            leadingIcon = {
+                Icon(
+                    painter = painterResource(id = R.drawable.ic_email),
+                    contentDescription = null
+                )
+            },
             isError = viewModel.errorCorreo.isNotEmpty(),
             supportingText = {
                 if (viewModel.errorCorreo.isNotEmpty()) {
@@ -99,6 +111,12 @@ fun RegisterScreen(
             value = viewModel.contrasena,
             onValueChange = viewModel::onContrasenaChange,
             label = { Text(text = stringResource(id = R.string.registro_contrasena)) },
+            leadingIcon = {
+                Icon(
+                    painter = painterResource(id = R.drawable.ic_lock),
+                    contentDescription = null
+                )
+            },
             isError = viewModel.errorContrasena.isNotEmpty(),
             supportingText = {
                 if (viewModel.errorContrasena.isNotEmpty()) {

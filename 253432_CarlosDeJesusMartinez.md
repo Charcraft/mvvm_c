@@ -21,9 +21,9 @@ Pantalla de registro de usuario con los elementos pedidos:
 | --- | --- |
 | `app/src/main/java/com/example/mvvm_c/presentation/register/RegisterScreen.kt` | La **View**: dibuja la pantalla y manda lo que escribe el usuario al ViewModel. |
 | `app/src/main/java/com/example/mvvm_c/presentation/register/RegisterViewModel.kt` | El **ViewModel**: guarda los datos de los campos y valida el formulario. |
-| `app/src/main/res/drawable/ic_person_add.xml` | Icono de persona con "+" (imagen de la pantalla). |
-| `app/src/main/res/drawable/ic_email.xml` | Icono de correo. |
-| `app/src/main/res/drawable/ic_lock.xml` | Icono de candado. |
+| `app/src/main/res/drawable/ic_person_add.xml` | Icono de persona con "+" (imagen de la pantalla y del campo nombre). |
+| `app/src/main/res/drawable/ic_email.xml` | Icono de correo (dentro del campo correo). |
+| `app/src/main/res/drawable/ic_lock.xml` | Icono de candado (dentro del campo contraseña). |
 
 ### Archivos que modifiqué
 
